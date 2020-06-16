@@ -1,0 +1,20 @@
+.btn {
+  .btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &--main {
+    color: $color-white;
+    background: $color-blue;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+
+    &:hover {
+      filter: brightness(120%);
+      box-shadow: 0 1rem 2rem rgba($color-blue, 0.4);
+    }
+  }
+}

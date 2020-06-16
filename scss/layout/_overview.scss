@@ -1,0 +1,8 @@
+.overview {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(10, 1fr) repeat(2, 1fr);
+  background: $color-white;
+  border-top-left-radius: 40px;
+  overflow: hidden;
+}

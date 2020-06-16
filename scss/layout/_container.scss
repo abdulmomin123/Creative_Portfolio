@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+  grid-template-columns: repeat(2, 1fr) [center-start] repeat(10, 1fr) [center-end] repeat(
+      2,
+      1fr
+    );
+  grid-column: center-start / center-end;
+  max-width: 70%;
+  min-height: 100rem;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
+  overflow: hidden;
+}

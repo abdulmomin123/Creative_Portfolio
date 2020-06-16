@@ -1,0 +1,36 @@
+.navigation {
+  grid-column: 5 / -1;
+  border-top-left-radius: 40px;
+  background: $color-white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 8rem;
+  color: $color-secondary;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    border-radius: 13px;
+    transition: all 0.1s;
+
+    &:hover,
+    &--active {
+      color: $color-white;
+      background: $color-blue;
+    }
+  }
+}
