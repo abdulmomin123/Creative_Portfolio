@@ -12,8 +12,11 @@
 // Components
 @import "components/buttons";
 @import "components/stats";
+@import "components/testimonial";
 
 // Layout
+@import "layout/about-me";
+@import "layout/clients";
 @import "layout/container";
 @import "layout/content";
 @import "layout/footer";
@@ -21,6 +24,8 @@
 @import "layout/navigation";
 @import "layout/overview";
 @import "layout/sidebar";
+@import "layout/skills";
+@import "layout/testimonials";
 
 // Pages
 @import "pages/home";

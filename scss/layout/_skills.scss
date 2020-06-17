@@ -1,0 +1,38 @@
+.skills {
+  &__heading {
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 4rem;
+    border: 5px solid $color-bg-secondary;
+    border-radius: 40px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: $color-blue-light;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__text {
+  }
+}

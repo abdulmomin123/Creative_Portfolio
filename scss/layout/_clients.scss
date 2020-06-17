@@ -1,0 +1,16 @@
+.clients {
+  &__heading {
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-container {
+    width: 15%;
+  }
+  &__client {
+  }
+}
