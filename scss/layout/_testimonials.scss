@@ -3,10 +3,40 @@
     margin-bottom: 6rem !important;
   }
 
-  &__1 {
+  &__switcher-container {
+    position: relative;
+    text-align: center;
   }
-  &__2 {
+
+  &__switcher-inner {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  &__3 {
+
+  &__switcher {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    background: $color-bg-switcher;
+    transition: all 0.3s;
+
+    &--2 {
+      left: 6rem;
+      margin: 0 2rem;
+    }
+
+    &:hover,
+    &--active {
+      background: $color-blue;
+      width: 3.5rem;
+    }
+  }
+
+  &__switcher-inner:hover :not(:hover) {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $color-bg-switcher;
   }
 }
