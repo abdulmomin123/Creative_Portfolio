@@ -28,8 +28,6 @@ html {
 }
 
 body {
-  color: $color-tertiary;
-  background: $color-bg-primary;
   padding: 12rem 0 14rem 0;
   background-image: repeating-linear-gradient(
       0deg,
@@ -172,6 +170,22 @@ body {
       rgba(1, 1, 1, 0.19) 69px
     ),
     linear-gradient(90deg, rgb(239, 53, 115), rgb(79, 2, 93));
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.7rem;
 }
 
 img {

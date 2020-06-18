@@ -1,7 +1,4 @@
 .skills {
-  &__heading {
-  }
-
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -25,14 +22,5 @@
   &__icon {
     font-size: 4rem;
     color: $color-blue-light;
-  }
-
-  &__title {
-  }
-
-  &__text {
-  }
-
-  &__text {
   }
 }

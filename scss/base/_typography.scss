@@ -2,4 +2,12 @@ body {
   font-family: $font-primary;
   line-height: 1.6;
   font-weight: 400;
+  color: $color-tertiary;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $color-primary;
+  }
 }

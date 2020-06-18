@@ -1,0 +1,113 @@
+.resume {
+  h2,
+  h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: $color-blue-light;
+    margin-right: 1.5rem;
+  }
+
+  &__list {
+    margin-left: 3rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      position: relative;
+      width: 2px;
+      background: $color-bg-switcher;
+
+      &::before {
+        @include blue-dot(0);
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        @include blue-dot(90%);
+      }
+    }
+  }
+
+  &__item-container {
+    width: 35vw;
+    margin-left: 2rem;
+
+    h3 {
+      line-height: 1;
+    }
+
+    &--1 {
+      padding-bottom: 4rem;
+    }
+
+    &--2 {
+      margin-top: -2rem;
+      padding-bottom: 4rem;
+    }
+
+    &--3 {
+      position: relative;
+      margin-top: -1.5rem;
+    }
+  }
+
+  &__title,
+  &__date {
+    margin-bottom: 0.4rem;
+  }
+
+  &__date {
+    color: $color-grey-light;
+  }
+
+  &__skills-container {
+    color: $color-white;
+    background: $color-bg-secondary;
+    padding: 4rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__skills-list {
+    & > *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__skills-item {
+    background: $color-grey-light-2;
+    border-radius: 30px;
+
+    p {
+      background: $color-blue;
+      padding: 0.5rem 2rem;
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bar {
+      &-1 {
+        width: 80%;
+      }
+
+      &-2 {
+        width: 75%;
+      }
+
+      &-3 {
+        width: 90%;
+      }
+
+      &-4 {
+        width: 85%;
+      }
+    }
+  }
+}
