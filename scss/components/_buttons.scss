@@ -5,7 +5,8 @@
     cursor: pointer;
   }
 
-  &--main {
+  &--main,
+  &--secondary {
     color: $color-white;
     background: $color-blue;
     padding: 1.5rem 2rem;

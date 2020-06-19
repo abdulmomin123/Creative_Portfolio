@@ -81,13 +81,13 @@ body {
   background: none;
   cursor: pointer; }
 
-.btn--main {
+.btn--main, .btn--secondary {
   color: #fff;
   background: #304cfd;
   padding: 1.5rem 2rem;
   border-radius: 20px;
   transition: all 0.2s; }
-  .btn--main:hover {
+  .btn--main:hover, .btn--secondary:hover {
     filter: brightness(120%);
     box-shadow: 0 1rem 2rem rgba(48, 76, 253, 0.4); }
 
@@ -259,6 +259,9 @@ body {
   border-top-left-radius: 40px;
   overflow: hidden; }
 
+.portfolio a {
+  font-size: 1.7rem; }
+
 .portfolio__list {
   display: flex; }
 
@@ -266,7 +269,6 @@ body {
   margin-right: 3rem; }
 
 .portfolio__link {
-  font-size: 1.7rem;
   color: #8697a8;
   transition: all 0.2s; }
   .portfolio__link--active, .portfolio__link:hover {
@@ -277,12 +279,28 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 3rem; }
+  .portfolio__projects-container--2, .portfolio__projects-container--3, .portfolio__projects-container--4 {
+    grid-template-rows: repeat(2, 1fr); }
 
 .portfolio__project {
+  position: relative;
   border-radius: 20px;
   background-color: #f1f3f9;
-  border: 1px solid #ccc;
-  overflow: hidden; }
+  border: 1px solid transparent;
+  overflow: hidden;
+  transition: all 0.2s; }
+  .portfolio__project:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; }
+  .portfolio__project:hover .portfolio__live-prev {
+    visibility: visible;
+    transform: translateX(-50%) scale(1); }
+  .portfolio__project:hover .portfolio__project-img {
+    transform: scale(1.1);
+    filter: brightness(50%) blur(5px); }
+  .portfolio__project-img {
+    transition: transform 0.3s, filter 0.3s;
+    backface-visibility: hidden; }
   .portfolio__project--1 {
     grid-column: 1 / 6; }
   .portfolio__project--2 {
@@ -298,6 +316,35 @@ body {
 
 .portfolio__stat {
   padding: 1rem 2rem; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .portfolio__stat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  .portfolio__stat-2 {
+    position: absolute;
+    top: 30%;
+    left: 50%; }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      .portfolio__stat-2 {
+        position: initial; } }
+
+.portfolio__live-prev {
+  font-size: 2rem !important;
+  color: #fff;
+  padding: 1rem 2rem;
+  background: #304cfd;
+  border-radius: 10px;
+  visibility: hidden;
+  transform: translateX(-50%) scale(0);
+  transition: all 0.2s; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .portfolio__live-prev {
+      position: initial;
+      font-size: 1.7rem !important;
+      padding: 0.5rem 1rem;
+      transform: none;
+      visibility: visible; } }
 
 .resume h2,
 .resume h1 {
