@@ -11,3 +11,10 @@
   box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
   overflow: hidden;
 }
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}

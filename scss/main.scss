@@ -11,11 +11,15 @@
 
 // Components
 @import "components/buttons";
+@import "components/card";
 @import "components/line";
+@import "components/post";
+@import "components/socials";
 @import "components/stats";
 @import "components/testimonial";
 
 // Layout
+@import "layout/blog";
 @import "layout/clients";
 @import "layout/container";
 @import "layout/content";

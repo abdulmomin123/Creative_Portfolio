@@ -1,0 +1,44 @@
+.socials {
+  display: flex;
+  font-size: 1.6rem;
+
+  &__link,
+  &--share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+
+  &--share {
+    .socials__link {
+      border: none;
+      border-radius: none;
+      width: auto;
+      height: auto;
+      transition: all 0.1s;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+
+    .socials__icon {
+      margin-right: 1rem;
+    }
+
+    span {
+      margin-right: 4rem;
+    }
+  }
+}

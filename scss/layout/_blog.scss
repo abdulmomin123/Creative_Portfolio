@@ -1,0 +1,30 @@
+.blog {
+  &__container {
+    padding: 5rem 0;
+  }
+
+  &__post-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+    color: $color-white;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $color-pink;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__day {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__month {
+    font-size: 1.5rem;
+  }
+}
