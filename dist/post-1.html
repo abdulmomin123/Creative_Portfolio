@@ -373,13 +373,29 @@
 
               <!-- Comment Box -->
               <div class="comment-box__box">
-                <input type="text" class="comment-box__input" />
-                <a class="comment-box-emoji">
+                <form action="#" class="comment-box__form">
+                  <input
+                    placeholder="Write a comment..."
+                    type="text"
+                    class="comment-box__input input-box"
+                  />
+                  <button
+                    type="submit"
+                    class="comment-box__post btn btn--tertiary"
+                  >
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+                <input
+                  class="comment-box__checkbox"
+                  type="checkbox"
+                  id="toggler"
+                />
+                <label for="toggler" class="comment-box__emoji">
                   <i class="far fa-smile"></i>
-                </a>
-                <a href="#" class="comment-box__post">
-                  <i class="fas fa-paper-plane"></i>
-                </a>
+                </label>
+
+                <!-- Emoji container -->
                 <div class="comment-box__emojies">
                   <img
                     src="img/emoji-1.png"
@@ -468,6 +484,16 @@
                   />
                   <img
                     src="img/emoji-18.png"
+                    alt="Emoji-18"
+                    class="comment-box__icon-emoji"
+                  />
+                  <img
+                    src="img/emoji-19.png"
+                    alt="Emoji-18"
+                    class="comment-box__icon-emoji"
+                  />
+                  <img
+                    src="img/emoji-20.png"
                     alt="Emoji-18"
                     class="comment-box__icon-emoji"
                   />

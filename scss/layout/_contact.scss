@@ -1,0 +1,21 @@
+.contact {
+  &__map-container {
+    height: 38rem;
+    background: $color-bg-secondary;
+    border-radius: 20px;
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__icon-location {
+    color: $color-blue;
+    font-size: 8rem;
+    text-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+  }
+}

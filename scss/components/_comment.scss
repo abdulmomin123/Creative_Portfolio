@@ -9,7 +9,8 @@
   }
 
   &__time,
-  &__end {
+  &__end,
+  &-box__input::placeholder {
     color: $color-grey-light;
     font-size: 1.6rem;
   }

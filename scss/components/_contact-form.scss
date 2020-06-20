@@ -1,0 +1,33 @@
+.contact-form {
+  &__inputs {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  h2 {
+    grid-column: 1 / -1;
+  }
+  &__name-container {
+  }
+
+  &__name {
+  }
+
+  &__email-container {
+  }
+
+  &__email {
+  }
+
+  &__message {
+    grid-column: 1 / -1;
+    height: 20rem;
+  }
+
+  &__submit {
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+}

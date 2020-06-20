@@ -20,19 +20,68 @@
   }
 
   &__box {
+    position: relative;
   }
 
-  &__input {
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__emojies {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__emoji,
+  &__post {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__emoji {
+    font-size: 2.2rem;
+    left: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 
   &__post {
+    font-size: 2.2rem;
+    color: $color-white;
+    background: $color-blue;
+    border-radius: 15px;
+    right: 1rem;
+    width: 5rem;
+    height: 5rem;
+
+    i {
+      @include absCenter;
+    }
   }
 
   &__emojies {
-    display: none;
+    position: absolute;
+    top: -350%;
+    left: -10%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: $color-white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    visibility: hidden;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 0.2s;
   }
 
   &__icon-emoji {

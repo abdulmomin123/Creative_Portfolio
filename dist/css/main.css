@@ -79,20 +79,24 @@ body {
 .ta-c {
   text-align: center; }
 
-.btn .btn {
+.btn {
   border: none;
-  background: none;
-  cursor: pointer; }
-
-.btn--main, .btn--secondary {
-  color: #fff;
-  background: #304cfd;
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
-  transition: all 0.2s; }
-  .btn--main:hover, .btn--secondary:hover {
-    filter: brightness(120%);
-    box-shadow: 0 1rem 2rem rgba(48, 76, 253, 0.4); }
+  background: transparent;
+  cursor: pointer;
+  backface-visibility: hidden; }
+  .btn:active, .btn:focus {
+    outline: none; }
+  .btn--main, .btn--secondary, .btn--tertiary {
+    color: #fff;
+    background: #304cfd;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    transition: all 0.2s; }
+    .btn--main:hover, .btn--secondary:hover, .btn--tertiary:hover {
+      filter: brightness(120%);
+      box-shadow: 0 1rem 2rem rgba(48, 76, 253, 0.4); }
+  .btn--tertiary:hover {
+    box-shadow: 0 0.8rem 1rem rgba(48, 76, 253, 0.4); }
 
 .card {
   position: relative;
@@ -157,7 +161,7 @@ body {
   border-radius: 20px; }
   .comment--replied {
     grid-column: 2 / -1; }
-  .comment__time, .comment__end {
+  .comment__time, .comment__end, .comment-box__input::placeholder {
     color: #8697a8;
     font-size: 1.6rem; }
   .comment__start {
@@ -204,13 +208,107 @@ body {
   width: 3rem;
   height: 3rem; }
 
-.comment-box__emojies {
+.comment-box__box {
+  position: relative; }
+
+.comment-box__checkbox {
   display: none; }
+
+.comment-box__checkbox:checked ~ .comment-box__emojies {
+  visibility: visible;
+  transform: scale(1); }
+
+.comment-box__emoji, .comment-box__post {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.comment-box__emoji {
+  font-size: 2.2rem;
+  left: 3rem;
+  cursor: pointer; }
+  .comment-box__emoji:hover {
+    filter: brightness(120%); }
+
+.comment-box__post {
+  font-size: 2.2rem;
+  color: #fff;
+  background: #304cfd;
+  border-radius: 15px;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem; }
+  .comment-box__post i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.comment-box__emojies {
+  position: absolute;
+  top: -350%;
+  left: -10%;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: all 0.2s; }
 
 .comment-box__icon-emoji {
   width: 3rem;
   height: 3rem;
   cursor: pointer; }
+
+.contact-form__inputs {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem; }
+
+.contact-form h2 {
+  grid-column: 1 / -1; }
+
+.contact-form__message {
+  grid-column: 1 / -1;
+  height: 20rem; }
+
+.contact-form__submit {
+  grid-column: 2 / 3;
+  justify-self: end; }
+
+.input-box,
+textarea {
+  font-family: inherit;
+  font-size: 1.7rem;
+  width: 100%;
+  color: #44566c;
+  background: #f5f8f9;
+  padding: 2rem 6rem;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  transition: all 0.2s; }
+  .input-box:focus,
+  textarea:focus {
+    outline: none;
+    border: 4px solid #304cfd; }
+  .input-box::placeholder,
+  textarea::placeholder {
+    font-size: inherit; }
+
+.input-box--contact,
+textarea {
+  font-size: 2rem;
+  color: #44566c; }
 
 .line {
   display: flex;
@@ -426,6 +524,23 @@ body {
 .post__comments-heading span {
   color: #8697a8; }
 
+.contact__map-container {
+  height: 38rem;
+  background: #f5f8f9;
+  border-radius: 20px; }
+
+.contact__map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+
+.contact__icon-location {
+  color: #304cfd;
+  font-size: 8rem;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+
 .container {
   display: grid;
   grid-template-rows: 7rem 1fr;
@@ -450,7 +565,7 @@ body {
 .content {
   grid-column: 4 / -1;
   background: #fff;
-  padding: 5rem;
+  padding: 4rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-content: start;

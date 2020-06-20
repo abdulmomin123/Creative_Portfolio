@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width"
+      ="device-width,"
+      initial-scale="1.0"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bf5bf6eb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;600&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>Felecia Brown</title>
+  </head>
+  <body>
+    <!-- Grid Container -->
+    <div class="container">
+      <!-- Nav -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">
+              About
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="resume.html" class="navigation__link">
+              Resume
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="portfolio.html" class="navigation__link">
+              Portfolio
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="blog.html" class="navigation__link">
+              Blog
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a
+              href="contact.html"
+              class="navigation__link navigation__link--active"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Area -->
+      <main class="overview">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="stats">
+            <div class="stats__img-container">
+              <img src="/dist/img/my-pic.png" alt="Myself" class="stats__img" />
+            </div>
+            <h2 class="stats__name">Felecia <span>Brown</span></h2>
+            <p class="stats__position">
+              Creative Director
+            </p>
+            <div class="socials">
+              <a href="#" class="socials__link">
+                <i class="socials__icon fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="socials__link">
+                <i class="socials__icon fab fa-twitter"></i>
+              </a>
+              <a href="#" class="socials__link">
+                <i class="socials__icon fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <ul class="stats__list">
+              <li class="stats__item">
+                <i class="stats__item-icon far fa-calendar-alt"></i>
+                <span>March 12, 1995</span>
+              </li>
+              <li class="stats__item">
+                <i class="stats__item-icon fas fa-map-marker-alt"></i>
+                <span>San-Francisco, USA</span>
+              </li>
+              <li class="stats__item">
+                <i class="stats__item-icon fas fa-envelope"></i>
+                <span>example@mail.com</span>
+              </li>
+              <li class="stats__item">
+                <i class="stats__item-icon fas fa-mobile-alt"></i>
+                <span>+1 (070) 123-4567</span>
+              </li>
+              <li class="stats__item">
+                <i class="stats__item-icon fab fa-skype"></i>
+                <span>Felecia_Brown</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--main">
+              <i
+                class="stats__item-icon stats__item-icon--btn fas fa-download"
+              ></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Content Area -->
+        <section class="content">
+          <!-- Portfolio -->
+          <section class="contact">
+            <h1 class="mr-btm-s">
+              Contact
+            </h1>
+            <div class="line mr-btm-m">
+              <span>
+                <!-- Line here -->
+              </span>
+            </div>
+            <!-- Map -->
+            <div class="contact__map-container mr-btm-m">
+              <div class="contact__map">
+                <i class="contact__icon-location fas fa-map-marker-alt"></i>
+              </div>
+            </div>
+            <!-- Contact Form -->
+            <form action="#" class="contact-form">
+              <h2 class="mr-btm-s">
+                Contact Form
+              </h2>
+              <div class="contact-form__inputs">
+                <div class="contact-form__name-container">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    name="name"
+                    id="name"
+                    class="contact-form__name input-box input-box--contact"
+                  />
+                  <i class="contact-form__icon far fa-user"></i>
+                </div>
+                <div class="contact-form__email-container">
+                  <input
+                    type="email"
+                    placeholder="Email Adress"
+                    name="email"
+                    id="email"
+                    class="contact-form__email input-box input-box--contact"
+                  />
+                  <i class="contact-form__icon fas fa-at"></i>
+                </div>
+                <textarea
+                  placeholder="Your Message"
+                  name="message"
+                  id="message input-box input-box--contact"
+                  class="contact-form__message"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="contact-form__submit btn btn--main"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

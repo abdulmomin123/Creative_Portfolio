@@ -1,12 +1,17 @@
 .btn {
-  .btn {
-    border: none;
-    background: none;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  backface-visibility: hidden;
+
+  &:active,
+  &:focus {
+    outline: none;
   }
 
   &--main,
-  &--secondary {
+  &--secondary,
+  &--tertiary {
     color: $color-white;
     background: $color-blue;
     padding: 1.5rem 2rem;
@@ -16,6 +21,12 @@
     &:hover {
       filter: brightness(120%);
       box-shadow: 0 1rem 2rem rgba($color-blue, 0.4);
+    }
+  }
+
+  &--tertiary {
+    &:hover {
+      box-shadow: 0 0.8rem 1rem rgba($color-blue, 0.4);
     }
   }
 }
