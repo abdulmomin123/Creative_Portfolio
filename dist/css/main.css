@@ -150,6 +150,69 @@ body {
       transform: none;
       filter: brightness(105%) blur(0px); }
 
+.comment {
+  grid-column: 1 / -1;
+  background: #f5f8f9;
+  padding: 2rem 4rem;
+  border-radius: 20px; }
+  .comment--replied {
+    grid-column: 2 / -1; }
+  .comment__time, .comment__end {
+    color: #8697a8;
+    font-size: 1.6rem; }
+  .comment__start {
+    display: grid;
+    grid-template-columns: min-content 1fr; }
+  .comment__img {
+    width: auto;
+    height: 9rem;
+    margin-right: 2rem; }
+  .comment__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem; }
+  .comment__time {
+    justify-self: end; }
+  .comment__text {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center; }
+  .comment__end {
+    margin-top: 0.5rem; }
+  .comment__loved {
+    margin-right: 5rem; }
+  .comment__emoji {
+    display: inline-block;
+    width: auto;
+    height: 2.5rem;
+    margin-left: 0.5rem; }
+  .comment__icon {
+    margin-right: 0.5rem; }
+    .comment__icon--heart {
+      color: #ff3d57; }
+
+.comment-box__login-with {
+  display: flex;
+  align-items: center; }
+  .comment-box__login-with span {
+    margin-right: 2rem; }
+  .comment-box__login-with a:not(:last-child) {
+    margin-right: 1rem; }
+
+.comment-box__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%; }
+
+.comment-box__emojies {
+  display: none; }
+
+.comment-box__icon-emoji {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer; }
+
 .line {
   display: flex;
   width: 6%;
@@ -171,7 +234,8 @@ body {
   background: #5f6f81; }
 
 .post {
-  grid-column: 4 / -1; }
+  grid-column: 4 / -1;
+  font-size: 1.6rem; }
   .post__return {
     position: relative;
     display: flex;
@@ -220,8 +284,7 @@ body {
     padding: 0 4rem 4rem 4rem; }
 
 .socials {
-  display: flex;
-  font-size: 1.6rem; }
+  display: flex; }
   .socials__link, .socials--share {
     display: flex;
     align-items: center;
@@ -361,6 +424,9 @@ body {
 .clients__img-container {
   width: 15%; }
 
+.post__comments-heading span {
+  color: #8697a8; }
+
 .container {
   display: grid;
   grid-template-rows: 7rem 1fr;
@@ -376,6 +442,11 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 3rem; }
+
+.container-3 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2rem; }
 
 .content {
   grid-column: 4 / -1;
