@@ -201,9 +201,8 @@ body {
     margin-right: 1rem; }
 
 .comment-box__icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%; }
+  width: 3rem;
+  height: 3rem; }
 
 .comment-box__emojies {
   display: none; }
