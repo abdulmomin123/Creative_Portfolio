@@ -62,9 +62,9 @@
         <!-- Sidebar -->
         <aside class="sidebar">
           <div class="stats">
-            <div class="stats__img-container">
+            <a href="index.html" class="stats__img-container">
               <img src="/dist/img/my-pic.png" alt="Myself" class="stats__img" />
-            </div>
+            </a>
             <h2 class="stats__name">Felecia <span>Brown</span></h2>
             <p class="stats__position">
               Creative Director
@@ -372,7 +372,7 @@
               </div>
 
               <!-- Comment Box -->
-              <div class="comment-box__box">
+              <div class="comment-box__box input-box__pos-rel">
                 <form action="#" class="comment-box__form">
                   <input
                     placeholder="Write a comment..."
@@ -381,7 +381,7 @@
                   />
                   <button
                     type="submit"
-                    class="comment-box__post btn btn--tertiary"
+                    class="comment-box__post btn btn--tertiary input-box__pos-abs"
                   >
                     <i class="fas fa-paper-plane"></i>
                   </button>
@@ -391,7 +391,10 @@
                   type="checkbox"
                   id="toggler"
                 />
-                <label for="toggler" class="comment-box__emoji">
+                <label
+                  for="toggler"
+                  class="comment-box__emoji input-box__pos-abs"
+                >
                   <i class="far fa-smile"></i>
                 </label>
 

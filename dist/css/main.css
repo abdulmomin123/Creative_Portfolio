@@ -97,6 +97,9 @@ body {
       box-shadow: 0 1rem 2rem rgba(48, 76, 253, 0.4); }
   .btn--tertiary:hover {
     box-shadow: 0 0.8rem 1rem rgba(48, 76, 253, 0.4); }
+  .btn--contact {
+    padding: 2rem 3rem;
+    border-radius: 15px; }
 
 .card {
   position: relative;
@@ -208,9 +211,6 @@ body {
   width: 3rem;
   height: 3rem; }
 
-.comment-box__box {
-  position: relative; }
-
 .comment-box__checkbox {
   display: none; }
 
@@ -218,17 +218,13 @@ body {
   visibility: visible;
   transform: scale(1); }
 
-.comment-box__emoji, .comment-box__post {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
-
 .comment-box__emoji {
   font-size: 2.2rem;
   left: 3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.2s; }
   .comment-box__emoji:hover {
-    filter: brightness(120%); }
+    color: #44566c; }
 
 .comment-box__post {
   font-size: 2.2rem;
@@ -278,13 +274,22 @@ body {
 .contact-form h2 {
   grid-column: 1 / -1; }
 
+.contact-form__icon {
+  left: 3rem;
+  font-size: 2.5rem; }
+
+.contact-form__icon-send {
+  margin-right: 1rem; }
+
 .contact-form__message {
   grid-column: 1 / -1;
-  height: 20rem; }
+  height: 20rem;
+  padding: 3rem; }
 
 .contact-form__submit {
   grid-column: 2 / 3;
-  justify-self: end; }
+  justify-self: end;
+  font-size: 1.7rem; }
 
 .input-box,
 textarea {
@@ -303,12 +308,25 @@ textarea {
     border: 4px solid #304cfd; }
   .input-box::placeholder,
   textarea::placeholder {
+    color: #8697a8;
     font-size: inherit; }
 
 .input-box--contact,
 textarea {
   font-size: 2rem;
   color: #44566c; }
+
+.contact-form__icon,
+.comment-box__emoji {
+  color: #8697a8; }
+
+.input-box__pos-rel {
+  position: relative; }
+
+.input-box__pos-abs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .line {
   display: flex;
@@ -489,7 +507,8 @@ textarea {
     opacity: 1; }
 
 .blog__container {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  padding-top: 6.7rem; }
 
 .blog__post-date {
   position: absolute;
@@ -570,6 +589,8 @@ textarea {
   grid-template-columns: repeat(1, 1fr);
   align-content: start;
   gap: 4rem; }
+  .content--contact {
+    padding-bottom: 8rem; }
 
 .navigation {
   grid-column: 6 / -1;

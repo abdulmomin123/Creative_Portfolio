@@ -9,10 +9,20 @@
   h2 {
     grid-column: 1 / -1;
   }
+
   &__name-container {
   }
 
   &__name {
+  }
+
+  &__icon {
+    left: 3rem;
+    font-size: 2.5rem;
+  }
+
+  &__icon-send {
+    margin-right: 1rem;
   }
 
   &__email-container {
@@ -24,10 +34,12 @@
   &__message {
     grid-column: 1 / -1;
     height: 20rem;
+    padding: 3rem;
   }
 
   &__submit {
     grid-column: 2 / 3;
     justify-self: end;
+    font-size: 1.7rem;
   }
 }

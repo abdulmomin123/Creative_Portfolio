@@ -16,6 +16,7 @@ textarea {
   }
 
   &::placeholder {
+    color: $color-grey-light;
     font-size: inherit;
   }
 }
@@ -24,4 +25,21 @@ textarea {
 textarea {
   font-size: 2rem;
   color: $color-primary;
+}
+
+.contact-form__icon,
+.comment-box__emoji {
+  color: $color-grey-light;
+}
+
+.input-box {
+  &__pos-rel {
+    position: relative;
+  }
+
+  &__pos-abs {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

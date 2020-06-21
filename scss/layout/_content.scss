@@ -6,4 +6,8 @@
   grid-template-columns: repeat(1, 1fr);
   align-content: start;
   gap: 4rem;
+
+  &--contact {
+    padding-bottom: 8rem;
+  }
 }

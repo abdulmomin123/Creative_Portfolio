@@ -62,9 +62,9 @@
         <!-- Sidebar -->
         <aside class="sidebar">
           <div class="stats">
-            <div class="stats__img-container">
+            <a href="index.html" class="stats__img-container">
               <img src="/dist/img/my-pic.png" alt="Myself" class="stats__img" />
-            </div>
+            </a>
             <h2 class="stats__name">Felecia <span>Brown</span></h2>
             <p class="stats__position">
               Creative Director
@@ -112,7 +112,7 @@
         </aside>
 
         <!-- Content Area -->
-        <section class="content">
+        <section class="content content--contact">
           <!-- Portfolio -->
           <section class="contact">
             <h1 class="mr-btm-s">
@@ -135,7 +135,7 @@
                 Contact Form
               </h2>
               <div class="contact-form__inputs">
-                <div class="contact-form__name-container">
+                <div class="contact-form__name-container input-box__pos-rel">
                   <input
                     type="text"
                     placeholder="Full Name"
@@ -143,9 +143,11 @@
                     id="name"
                     class="contact-form__name input-box input-box--contact"
                   />
-                  <i class="contact-form__icon far fa-user"></i>
+                  <i
+                    class="contact-form__icon far fa-user input-box__pos-abs"
+                  ></i>
                 </div>
-                <div class="contact-form__email-container">
+                <div class="contact-form__email-container input-box__pos-rel">
                   <input
                     type="email"
                     placeholder="Email Adress"
@@ -153,7 +155,9 @@
                     id="email"
                     class="contact-form__email input-box input-box--contact"
                   />
-                  <i class="contact-form__icon fas fa-at"></i>
+                  <i
+                    class="contact-form__icon fas fa-at input-box__pos-abs"
+                  ></i>
                 </div>
                 <textarea
                   placeholder="Your Message"
@@ -163,8 +167,9 @@
                 ></textarea>
                 <button
                   type="submit"
-                  class="contact-form__submit btn btn--main"
+                  class="contact-form__submit btn btn--main btn--contact"
                 >
+                  <i class="contact-form__icon-send fas fa-paper-plane"></i>
                   Send Message
                 </button>
               </div>
