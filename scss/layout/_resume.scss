@@ -16,8 +16,8 @@
   }
 
   &__item {
-    height: 10vw;
     position: relative;
+    padding-bottom: 2rem;
 
     &:not(:last-child) {
       position: relative;
@@ -37,11 +37,13 @@
   }
 
   &__item-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55vw;
     margin-left: 2rem;
+
+    &--1,
+    &--2 {
+      // width: 50350%;
+      width: 52vw;
+    }
 
     h3 {
       line-height: 1;

@@ -1,7 +1,7 @@
 .overview {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(2, 1fr) repeat(10, 1fr) repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(65px, 1fr)) repeat(11, 1fr);
   background: $color-white;
   border-top-left-radius: 40px;
   overflow: hidden;
