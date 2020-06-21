@@ -1,0 +1,11 @@
+.skills__skill,
+.socials__link {
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.skills__skill:hover {
+  &:hover {
+    transform: scale(1.08);
+  }
+}

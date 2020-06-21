@@ -17,6 +17,10 @@
   &__icon {
     width: 3rem;
     height: 3rem;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 
   &__checkbox {

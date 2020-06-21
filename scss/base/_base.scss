@@ -27,6 +27,42 @@ html {
   // }
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+// ::selection {
+//   color: $color-white;
+//   background: $color-primary;
+// }
+
 body {
   padding: 12rem 0 14rem 0;
   background-image: repeating-linear-gradient(
@@ -171,39 +207,3 @@ body {
     ),
     linear-gradient(90deg, rgb(239, 53, 115), rgb(79, 2, 93));
 }
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.8rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-
-p {
-  font-size: 1.7rem;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: $color-secondary;
-}
-
-// ::selection {
-//   color: $color-white;
-//   background: $color-primary;
-// }
