@@ -10,21 +10,25 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  // @include respond(big-desk) {
-  //   font-size: 75%; //1rem = 12px 12/16 = 62.5%
-  // }
+  @include respond(big-desk) {
+    font-size: 68.75%; //1rem = 11px 11/16 = 62.5%
+  }
 
-  // @include respond(tab-land) {
-  //   font-size: 50%; //1rem = 8px 8/16 = 50%
-  // }
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px 9/16 = 50%
+  }
 
-  // @include respond(tab-port) {
-  //   font-size: 50%; //1rem = 8px 8/16 = 50%
-  // }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 9px 8/16 = 50%
+  }
 
-  // @include respond(phone) {
-  //   font-size: 50%; //1rem = 8px 8/16 = 50%
-  // }
+  @include respond(phone) {
+    font-size: 50%; //1rem = 8px 8/16 = 50%
+  }
+
+  @include respond(phone-small) {
+    font-size: 50%; //1rem = 8px 8/16 = 50%
+  }
 }
 
 h1 {
@@ -58,10 +62,10 @@ a {
   color: $color-secondary;
 }
 
-// ::selection {
-//   color: $color-white;
-//   background: $color-primary;
-// }
+::selection {
+  color: $color-white;
+  background: $color-primary;
+}
 
 body {
   padding: 12rem 0 14rem 0;

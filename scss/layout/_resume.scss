@@ -16,6 +16,9 @@
   }
 
   &__item {
+    height: 10vw;
+    position: relative;
+
     &:not(:last-child) {
       position: relative;
       width: 2px;
@@ -28,31 +31,20 @@
 
     &:nth-child(2) {
       &::after {
-        @include blue-dot(90%);
+        @include blue-dot(100%);
       }
     }
   }
 
   &__item-container {
-    width: 35vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55vw;
     margin-left: 2rem;
 
     h3 {
       line-height: 1;
-    }
-
-    &--1 {
-      padding-bottom: 4rem;
-    }
-
-    &--2 {
-      margin-top: -2rem;
-      padding-bottom: 4rem;
-    }
-
-    &--3 {
-      position: relative;
-      margin-top: -1.5rem;
     }
   }
 
