@@ -1,5 +1,10 @@
 .testimonials {
-  position: relative;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
   &__switcher-container {
     position: relative;
     text-align: center;

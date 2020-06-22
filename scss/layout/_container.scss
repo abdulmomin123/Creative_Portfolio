@@ -10,6 +10,10 @@
   border-radius: 40px;
   box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
   overflow: hidden;
+
+  @include respond(tab-land) {
+    margin: 0;
+  }
 }
 
 .container-2 {

@@ -1,9 +1,8 @@
 .sidebar {
   grid-column: 1 / 4;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-radius: 40px;
   background: $color-bg-secondary;
-
+  padding-bottom: 4rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, max-content);
@@ -13,9 +12,19 @@
   font-size: 1.6rem;
   color: $color-tertiary;
 
+  @include respond(phone) {
+    grid-column: 1 / -1;
+    font-size: 200%;
+  }
+
   &__img-container {
     padding: 4.5rem;
     padding-bottom: 0;
+
+    @include respond(phone) {
+      padding: 10rem;
+      padding-bottom: 0;
+    }
   }
 
   &__img {
@@ -46,6 +55,10 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     justify-self: center;
+
+    @include respond(phone) {
+      justify-items: center;
+    }
   }
 
   &__item {
@@ -64,6 +77,11 @@
   a[class="btn btn--main"] {
     width: 80%;
     text-align: center;
+
+    @include respond(phone) {
+      width: 45%;
+      padding: 2rem 2rem;
+    }
   }
 
   &__item-icon--btn {

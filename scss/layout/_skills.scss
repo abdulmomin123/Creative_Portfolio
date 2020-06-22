@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+
+    @include respond(phone) {
+      gap: 3rem;
+      padding: 0 4rem;
+    }
   }
 
   &__skill {
@@ -16,6 +21,10 @@
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      grid-column: 1/ -1;
     }
   }
 

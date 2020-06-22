@@ -39,12 +39,16 @@
 
   &__text {
     grid-column: 1 / -1;
-    display: flex;
-    align-items: center;
+  }
+
+  &__emoji {
+    transform: translateY(0.5rem);
   }
 
   &__end {
     margin-top: 0.5rem;
+    display: flex;
+    width: 100%;
   }
 
   &__loved {
@@ -64,8 +68,5 @@
     &--heart {
       color: $color-red;
     }
-  }
-
-  &__reply {
   }
 }

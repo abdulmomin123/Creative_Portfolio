@@ -10,4 +10,8 @@
   &--contact {
     padding-bottom: 8rem;
   }
+
+  @include respond(phone) {
+    grid-column: 1/ -1;
+  }
 }

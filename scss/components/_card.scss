@@ -34,10 +34,14 @@
     grid-column: 6 / -1;
   }
 
+  @include respond(tab-port) {
+    grid-column: 1 / -1;
+  }
+
   &__stat {
     padding: 1rem 2rem;
 
-    &-2 {
+    &--2 {
       position: absolute;
       top: 30%;
       left: 50%;
@@ -58,12 +62,22 @@
   &:hover .portfolio__live-prev {
     visibility: visible;
     transform: translateX(-50%) scale(1);
+
+    @include respond(tab-port) {
+      transform: none;
+    }
   }
 
   &:hover &__img {
     transform: scale(1.1);
     filter: brightness(50%) blur(5px);
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      transform: none;
+      filter: none;
+      transition: none;
+    }
   }
 
   &__img {

@@ -1,10 +1,12 @@
 .testimonial {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   position: relative;
-  background: $color-bg-secondary;
   padding: 2rem 4rem;
+  background: $color-bg-secondary;
   border-radius: 20px;
   display: grid;
-  grid-template-columns: 20rem 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 1rem;
   margin-bottom: 4rem;
@@ -16,14 +18,11 @@
     transform: translateY(-50%);
     height: 9rem;
     width: auto;
-    // border: 5px solid $color-white;
-    // box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
   }
 
   &__name {
     font-size: 2rem !important;
-    justify-self: end;
-    transform: translateX(50%);
+    transform: translateX(40%);
   }
 
   &__quote {
@@ -41,12 +40,9 @@
 
 #t2,
 #t3 {
-  position: absolute;
-  opacity: 0.2;
-  top: 10.5rem;
-  visibility: hidden;
   opacity: 0;
-  transition: all 0.3s;
+  visibility: hidden;
+  transition: all 0.2s;
 
   &:target {
     visibility: visible;
