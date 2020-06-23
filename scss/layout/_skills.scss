@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
-    @include respond(phone) {
+    @include respond(tab-port-small) {
       gap: 3rem;
       padding: 0 4rem;
     }
@@ -23,8 +23,8 @@
       margin-bottom: 2rem;
     }
 
-    @include respond(phone) {
-      grid-column: 1/ -1;
+    @include respond(tab-port-small) {
+      grid-column: 1 / -1;
     }
   }
 

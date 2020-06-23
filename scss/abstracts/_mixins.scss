@@ -36,7 +36,7 @@ big-desk: 1800px
   }
 
   @if $breakpoint == tab-port-small {
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 48.4375em) {
       @content;
     }
   }

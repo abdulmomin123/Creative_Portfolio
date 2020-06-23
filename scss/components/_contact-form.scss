@@ -11,9 +11,9 @@
   }
 
   &__name-container {
-  }
-
-  &__name {
+    @include respond(phone-small) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__icon {
@@ -26,9 +26,9 @@
   }
 
   &__email-container {
-  }
-
-  &__email {
+    @include respond(phone-small) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__message {
@@ -41,5 +41,11 @@
     grid-column: 2 / 3;
     justify-self: end;
     font-size: 1.7rem;
+
+    @include respond(phone-small) {
+      grid-column: 1 / -1;
+      width: 100%;
+      border-radius: 20px;
+    }
   }
 }

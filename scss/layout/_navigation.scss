@@ -5,18 +5,31 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 0 8rem;
+  padding: 0 10%;
   color: $color-secondary;
+
+  @include respond(tab-port-small) {
+    padding: 0 5%;
+  }
 
   &__list {
     display: flex;
     justify-content: space-between;
     flex: 1;
+
+    @include respond(tab-port-small) {
+      justify-content: center;
+      width: 80%;
+    }
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: 0.5rem;
+      margin-right: 1rem;
+
+      @include respond(tab-port-small) {
+        margin-right: 6%;
+      }
     }
   }
 
@@ -26,6 +39,10 @@
     padding: 0.8rem 2rem;
     border-radius: 1.3rem;
     transition: all 0.3s;
+
+    @include respond(tab-port-small) {
+      padding: 0.8rem 15%;
+    }
 
     &:hover,
     &--active {

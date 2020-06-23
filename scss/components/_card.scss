@@ -34,7 +34,7 @@
     grid-column: 6 / -1;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-port-small) {
     grid-column: 1 / -1;
   }
 
