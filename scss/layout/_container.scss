@@ -11,6 +11,10 @@
   @include respond(tab-land) {
     margin: 0;
   }
+
+  @include respond(phone) {
+    display: initial;
+  }
 }
 
 .container-2 {
