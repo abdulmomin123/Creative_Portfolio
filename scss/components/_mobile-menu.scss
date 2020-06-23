@@ -1,0 +1,41 @@
+.menu {
+  &__checkbox {
+    display: none;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  @include respond(phone) {
+    &__menu {
+      display: initial;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 9rem;
+      height: 9rem;
+      color: $color-white;
+      background: $color-blue;
+      border-radius: 50% 0 50% 50%;
+      cursor: pointer;
+      z-index: 2;
+
+      span {
+        font-size: 1.9rem;
+        @include absCenter;
+      }
+    }
+
+    &__checkbox:checked ~ .navigation {
+      visibility: visible;
+      opacity: 1;
+      background: $color-blue;
+      transform: scale(1);
+    }
+
+    &__checkbox:checked + &__menu {
+      background: $color-blue-dark;
+    }
+  }
+}
