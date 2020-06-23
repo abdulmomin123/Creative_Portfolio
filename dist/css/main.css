@@ -766,6 +766,9 @@ textarea {
 
 .portfolio__item:not(:last-child) {
   margin-right: 3rem; }
+  @media only screen and (max-width: 31.25em) {
+    .portfolio__item:not(:last-child) {
+      margin-right: 2.5rem; } }
 
 .portfolio__link {
   color: #8697a8;

@@ -18,6 +18,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 3rem;
+
+      @include respond(phone-small) {
+        margin-right: 2.5rem;
+      }
     }
   }
 
