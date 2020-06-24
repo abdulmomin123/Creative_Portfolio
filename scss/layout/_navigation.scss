@@ -12,48 +12,6 @@
     padding: 0 5%;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-
-    @include respond(tab-port-small) {
-      justify-content: center;
-      width: 80%;
-    }
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 1rem;
-
-      @include respond(tab-port-small) {
-        margin-right: 6%;
-      }
-    }
-  }
-
-  &__link {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding: 0.8rem 2rem;
-    border-radius: 1.3rem;
-    transition: all 0.3s;
-
-    @include respond(tab-port-small) {
-      padding: 0.8rem 15%;
-    }
-
-    &:hover,
-    &--active {
-      color: $color-white;
-      background: $color-blue;
-    }
-  }
-}
-
-// Mobile Version
-.navigation {
   @include respond(phone) {
     position: fixed;
     top: 0;
@@ -70,30 +28,68 @@
     transform: scale(0);
     transition: all 0.4s cubic-bezier(1, 0, 0, 1);
     z-index: 1;
+  }
 
-    &__list {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    @include respond(tab-port-small) {
+      justify-content: center;
+      width: 80%;
+    }
+
+    @include respond(phone) {
       flex-direction: column;
       align-items: center;
       flex: 0 0 90%;
       margin-left: auto;
     }
+  }
 
-    &__item {
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1rem;
+
+      @include respond(tab-port-small) {
+        margin-right: 6%;
+      }
+    }
+
+    @include respond(phone) {
       width: 100%;
       margin: 0 !important;
       margin-bottom: 3rem !important;
     }
+  }
 
-    &__link {
+  &__link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    border-radius: 1.3rem;
+    transition: all 0.3s;
+
+    @include respond(tab-port-small) {
+      padding: 0.8rem 15%;
+    }
+
+    @include respond(phone) {
       font-size: 3rem;
       width: 100%;
       color: $color-white;
       margin-right: 0;
       border-radius: 1.3rem 0 0 1.3rem;
       padding: 1.5rem 2rem;
+    }
 
-      &--active,
-      &:hover {
+    &:hover,
+    &--active {
+      color: $color-white;
+      background: $color-blue;
+
+      @include respond(phone) {
         background: $color-pink;
       }
     }
