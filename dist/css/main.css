@@ -669,6 +669,9 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .content {
       grid-column: 1/ -1; } }
+  @media only screen and (max-width: 25em) {
+    .content {
+      padding: 3rem; } }
 
 .navigation {
   grid-column: 6 / -1;
