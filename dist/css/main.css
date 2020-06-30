@@ -675,6 +675,7 @@ textarea {
 
 .navigation {
   grid-column: 6 / -1;
+  position: relative;
   border-top-left-radius: 40px;
   background: #fff;
   display: flex;
@@ -685,6 +686,12 @@ textarea {
   @media only screen and (max-width: 48.4375em) {
     .navigation {
       padding: 0 5%; } }
+  .navigation svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    transform: translateX(-65%); }
   @media only screen and (max-width: 37.5em) {
     .navigation {
       position: fixed;
