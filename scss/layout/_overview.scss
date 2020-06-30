@@ -3,10 +3,6 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(65px, 1fr)) repeat(11, 1fr);
   background: $color-white;
-  border-top-left-radius: 40px;
-  overflow: hidden;
-
-  @include respond(phone) {
-    border-radius: 40px;
-  }
+  border-radius: 40px;
+  box-shadow: 0 2rem 5rem rgba($color-black, 0.25);
 }

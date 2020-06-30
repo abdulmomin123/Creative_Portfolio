@@ -3,10 +3,7 @@
   grid-template-rows: 7rem 1fr;
   grid-template-columns: repeat(5, 1fr) repeat(9, 1fr);
   max-width: 133rem;
-  margin: auto;
-  border-radius: 40px;
-  box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
-  overflow: hidden;
+  margin: 0 auto;
 
   @include respond(tab-land) {
     margin: 0;

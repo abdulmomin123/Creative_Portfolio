@@ -78,7 +78,7 @@ a {
 
 body {
   padding: 12rem 0 14rem 0;
-  background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.11) 0px, rgba(0, 0, 0, 0.11) 12px, rgba(1, 1, 1, 0.16) 12px, rgba(1, 1, 1, 0.16) 24px, rgba(0, 0, 0, 0.14) 24px, rgba(0, 0, 0, 0.14) 36px, rgba(0, 0, 0, 0.23) 36px, rgba(0, 0, 0, 0.23) 48px, rgba(0, 0, 0, 0.12) 48px, rgba(0, 0, 0, 0.12) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(0, 0, 0, 0.21) 72px, rgba(0, 0, 0, 0.21) 84px, rgba(0, 0, 0, 0.24) 84px, rgba(0, 0, 0, 0.24) 96px, rgba(1, 1, 1, 0.23) 96px, rgba(1, 1, 1, 0.23) 108px, rgba(1, 1, 1, 0.07) 108px, rgba(1, 1, 1, 0.07) 120px, rgba(0, 0, 0, 0.01) 120px, rgba(0, 0, 0, 0.01) 132px, rgba(1, 1, 1, 0.22) 132px, rgba(1, 1, 1, 0.22) 144px, rgba(1, 1, 1, 0.24) 144px, rgba(1, 1, 1, 0.24) 156px, rgba(0, 0, 0, 0) 156px, rgba(0, 0, 0, 0) 168px, rgba(0, 0, 0, 0.12) 168px, rgba(0, 0, 0, 0.12) 180px), repeating-linear-gradient(90deg, rgba(1, 1, 1, 0.01) 0px, rgba(1, 1, 1, 0.01) 12px, rgba(1, 1, 1, 0.15) 12px, rgba(1, 1, 1, 0.15) 24px, rgba(0, 0, 0, 0.09) 24px, rgba(0, 0, 0, 0.09) 36px, rgba(0, 0, 0, 0.02) 36px, rgba(0, 0, 0, 0.02) 48px, rgba(0, 0, 0, 0.1) 48px, rgba(0, 0, 0, 0.1) 60px, rgba(1, 1, 1, 0.07) 60px, rgba(1, 1, 1, 0.07) 72px, rgba(1, 1, 1, 0.15) 72px, rgba(1, 1, 1, 0.15) 84px, rgba(0, 0, 0, 0.18) 84px, rgba(0, 0, 0, 0.18) 96px, rgba(1, 1, 1, 0.15) 96px, rgba(1, 1, 1, 0.15) 108px, rgba(1, 1, 1, 0.09) 108px, rgba(1, 1, 1, 0.09) 120px, rgba(1, 1, 1, 0.07) 120px, rgba(1, 1, 1, 0.07) 132px, rgba(1, 1, 1, 0.05) 132px, rgba(1, 1, 1, 0.05) 144px, rgba(0, 0, 0, 0.1) 144px, rgba(0, 0, 0, 0.1) 156px, rgba(1, 1, 1, 0.18) 156px, rgba(1, 1, 1, 0.18) 168px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0px, rgba(0, 0, 0, 0.24) 16px, rgba(1, 1, 1, 0.06) 16px, rgba(1, 1, 1, 0.06) 32px, rgba(0, 0, 0, 0.16) 32px, rgba(0, 0, 0, 0.16) 48px, rgba(1, 1, 1, 0) 48px, rgba(1, 1, 1, 0) 64px, rgba(1, 1, 1, 0.12) 64px, rgba(1, 1, 1, 0.12) 80px, rgba(1, 1, 1, 0.22) 80px, rgba(1, 1, 1, 0.22) 96px, rgba(0, 0, 0, 0.24) 96px, rgba(0, 0, 0, 0.24) 112px, rgba(0, 0, 0, 0.25) 112px, rgba(0, 0, 0, 0.25) 128px, rgba(1, 1, 1, 0.12) 128px, rgba(1, 1, 1, 0.12) 144px, rgba(0, 0, 0, 0.18) 144px, rgba(0, 0, 0, 0.18) 160px, rgba(1, 1, 1, 0.03) 160px, rgba(1, 1, 1, 0.03) 176px, rgba(1, 1, 1, 0.1) 176px, rgba(1, 1, 1, 0.1) 192px), repeating-linear-gradient(135deg, rgba(1, 1, 1, 0.18) 0px, rgba(1, 1, 1, 0.18) 3px, rgba(0, 0, 0, 0.09) 3px, rgba(0, 0, 0, 0.09) 6px, rgba(0, 0, 0, 0.08) 6px, rgba(0, 0, 0, 0.08) 9px, rgba(1, 1, 1, 0.05) 9px, rgba(1, 1, 1, 0.05) 12px, rgba(0, 0, 0, 0.01) 12px, rgba(0, 0, 0, 0.01) 15px, rgba(1, 1, 1, 0.12) 15px, rgba(1, 1, 1, 0.12) 18px, rgba(0, 0, 0, 0.05) 18px, rgba(0, 0, 0, 0.05) 21px, rgba(1, 1, 1, 0.16) 21px, rgba(1, 1, 1, 0.16) 24px, rgba(1, 1, 1, 0.07) 24px, rgba(1, 1, 1, 0.07) 27px, rgba(1, 1, 1, 0.23) 27px, rgba(1, 1, 1, 0.23) 30px, rgba(0, 0, 0, 0.2) 30px, rgba(0, 0, 0, 0.2) 33px, rgba(0, 0, 0, 0.18) 33px, rgba(0, 0, 0, 0.18) 36px, rgba(1, 1, 1, 0.12) 36px, rgba(1, 1, 1, 0.12) 39px, rgba(1, 1, 1, 0.13) 39px, rgba(1, 1, 1, 0.13) 42px, rgba(1, 1, 1, 0.2) 42px, rgba(1, 1, 1, 0.2) 45px, rgba(1, 1, 1, 0.18) 45px, rgba(1, 1, 1, 0.18) 48px, rgba(0, 0, 0, 0.2) 48px, rgba(0, 0, 0, 0.2) 51px, rgba(1, 1, 1, 0) 51px, rgba(1, 1, 1, 0) 54px, rgba(0, 0, 0, 0.03) 54px, rgba(0, 0, 0, 0.03) 57px, rgba(1, 1, 1, 0.06) 57px, rgba(1, 1, 1, 0.06) 60px, rgba(1, 1, 1, 0) 60px, rgba(1, 1, 1, 0) 63px, rgba(0, 0, 0, 0.1) 63px, rgba(0, 0, 0, 0.1) 66px, rgba(1, 1, 1, 0.19) 66px, rgba(1, 1, 1, 0.19) 69px), linear-gradient(90deg, #ef3573, #4f025d); }
+  background-image: repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, rgba(145, 145, 145, 0.02) 39px, rgba(140, 140, 140, 0.02) 39px, rgba(140, 140, 140, 0.02) 57px, rgba(9, 9, 9, 0.02) 57px, rgba(9, 9, 9, 0.02) 91px, rgba(217, 217, 217, 0.02) 91px, rgba(217, 217, 217, 0.02) 119px, rgba(45, 45, 45, 0.02) 119px, rgba(45, 45, 45, 0.02) 141px, rgba(227, 227, 227, 0.02) 141px, rgba(227, 227, 227, 0.02) 184px, rgba(236, 236, 236, 0.02) 184px, rgba(236, 236, 236, 0.02) 227px, rgba(124, 124, 124, 0.02) 227px, rgba(124, 124, 124, 0.02) 244px), repeating-linear-gradient(135deg, rgba(39, 39, 39, 0.02) 0px, rgba(39, 39, 39, 0.02) 23px, rgba(2, 2, 2, 0.02) 23px, rgba(2, 2, 2, 0.02) 55px, rgba(13, 13, 13, 0.02) 55px, rgba(13, 13, 13, 0.02) 71px, rgba(44, 44, 44, 0.02) 71px, rgba(44, 44, 44, 0.02) 98px, rgba(240, 240, 240, 0.02) 98px, rgba(240, 240, 240, 0.02) 134px, rgba(182, 182, 182, 0.02) 134px, rgba(182, 182, 182, 0.02) 159px, rgba(246, 246, 246, 0.02) 159px, rgba(246, 246, 246, 0.02) 174px, rgba(157, 157, 157, 0.02) 174px, rgba(157, 157, 157, 0.02) 190px), repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, rgba(145, 145, 145, 0.02) 35px, rgba(217, 217, 217, 0.02) 35px, rgba(217, 217, 217, 0.02) 53px, rgba(199, 199, 199, 0.02) 53px, rgba(199, 199, 199, 0.02) 70px, rgba(196, 196, 196, 0.02) 70px, rgba(196, 196, 196, 0.02) 114px, rgba(137, 137, 137, 0.02) 114px, rgba(137, 137, 137, 0.02) 143px, rgba(249, 249, 249, 0.02) 143px, rgba(249, 249, 249, 0.02) 191px, rgba(247, 247, 247, 0.02) 191px, rgba(247, 247, 247, 0.02) 239px, rgba(38, 38, 38, 0.02) 239px, rgba(38, 38, 38, 0.02) 273px), linear-gradient(90deg, #454545, #030303); }
   @media only screen and (max-width: 37.5em) {
     body {
       padding: 9rem 0; } }
@@ -634,10 +634,7 @@ textarea {
   grid-template-rows: 7rem 1fr;
   grid-template-columns: repeat(5, 1fr) repeat(9, 1fr);
   max-width: 133rem;
-  margin: auto;
-  border-radius: 40px;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  overflow: hidden; }
+  margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .container {
       margin: 0; } }
@@ -663,7 +660,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-content: start;
-  gap: 4rem; }
+  gap: 4rem;
+  border-radius: 0 0 40px 40px; }
   .content--contact {
     padding-bottom: 8rem; }
   @media only screen and (max-width: 37.5em) {
@@ -676,7 +674,7 @@ textarea {
 .navigation {
   grid-column: 6 / -1;
   position: relative;
-  border-top-left-radius: 40px;
+  border-radius: 40px 40px 0 0;
   background: #fff;
   display: flex;
   align-items: flex-end;
@@ -765,11 +763,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, minmax(65px, 1fr)) repeat(11, 1fr);
   background: #fff;
-  border-top-left-radius: 40px;
-  overflow: hidden; }
-  @media only screen and (max-width: 37.5em) {
-    .overview {
-      border-radius: 40px; } }
+  border-radius: 40px;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25); }
 
 .portfolio a {
   font-size: 1.7rem; }
