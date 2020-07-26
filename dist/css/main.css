@@ -771,6 +771,9 @@ textarea {
   background: #fff;
   border-radius: 40px;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25); }
+  @media only screen and (max-width: 37.5em) {
+    .overview {
+      overflow: hidden; } }
 
 .portfolio a {
   font-size: 1.7rem; }
@@ -912,10 +915,11 @@ textarea {
   @media only screen and (max-width: 37.5em) {
     .sidebar {
       display: none; } }
-  .sidebar-body {
-    display: grid;
-    grid-column: 1 / -1;
-    font-size: 200%; }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar-body {
+      display: grid;
+      grid-column: 1 / -1;
+      font-size: 200%; } }
   .sidebar__img-container {
     padding: 4.5rem;
     padding-bottom: 0; }

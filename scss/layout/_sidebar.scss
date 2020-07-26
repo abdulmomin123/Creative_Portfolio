@@ -16,10 +16,12 @@
     display: none;
   }
 
-  &-body {
-    display: grid;
-    grid-column: 1 / -1;
-    font-size: 200%;
+  @include respond(phone) {
+    &-body {
+      display: grid;
+      grid-column: 1 / -1;
+      font-size: 200%;
+    }
   }
 
   &__img-container {
