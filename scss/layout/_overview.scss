@@ -5,4 +5,8 @@
   background: $color-white;
   border-radius: 40px;
   box-shadow: 0 2rem 5rem rgba($color-black, 0.25);
+
+  @include respond(phone) {
+    overflow: hidden;
+  }
 }

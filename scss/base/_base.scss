@@ -6,6 +6,14 @@
   box-sizing: inherit;
 }
 
+// Transition fix
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;

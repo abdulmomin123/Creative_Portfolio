@@ -13,6 +13,11 @@
   color: $color-tertiary;
 
   @include respond(phone) {
+    display: none;
+  }
+
+  &-body {
+    display: grid;
     grid-column: 1 / -1;
     font-size: 200%;
   }

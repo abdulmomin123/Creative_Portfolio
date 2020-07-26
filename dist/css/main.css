@@ -29,6 +29,12 @@ big-desk: 1800px
   padding: 0;
   box-sizing: inherit; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -765,6 +771,9 @@ textarea {
   background: #fff;
   border-radius: 40px;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25); }
+  @media only screen and (max-width: 37.5em) {
+    .overview {
+      overflow: hidden; } }
 
 .portfolio a {
   font-size: 1.7rem; }
@@ -905,8 +914,11 @@ textarea {
   color: #5f6f81; }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
-      grid-column: 1 / -1;
-      font-size: 200%; } }
+      display: none; } }
+  .sidebar-body {
+    display: grid;
+    grid-column: 1 / -1;
+    font-size: 200%; }
   .sidebar__img-container {
     padding: 4.5rem;
     padding-bottom: 0; }
