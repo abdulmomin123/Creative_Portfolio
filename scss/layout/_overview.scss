@@ -4,7 +4,6 @@
   grid-template-columns: repeat(3, minmax(65px, 1fr)) repeat(11, 1fr);
   background: $color-white;
   border-radius: 40px;
-  border-top-right-radius: 0;
   box-shadow: 0 2rem 5rem rgba($color-black, 0.25);
 
   @include respond(phone) {

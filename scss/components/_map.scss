@@ -1,0 +1,11 @@
+.map {
+  height: 38rem;
+  background: $color-bg-secondary;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__map {
+    height: 100%;
+    width: 100%;
+  }
+}

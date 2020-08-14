@@ -420,6 +420,15 @@ textarea {
   height: 1px;
   background: #5f6f81; }
 
+.map {
+  height: 38rem;
+  background: #f5f8f9;
+  border-radius: 20px;
+  overflow: hidden; }
+  .map__map {
+    height: 100%;
+    width: 100%; }
+
 .menu__checkbox {
   display: none; }
 
@@ -617,23 +626,6 @@ textarea {
 .post__comments-heading span {
   color: #8697a8; }
 
-.contact__map-container {
-  height: 38rem;
-  background: #f5f8f9;
-  border-radius: 20px; }
-
-.contact__map {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%; }
-
-.contact__icon-location {
-  color: #304cfd;
-  font-size: 8rem;
-  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
-
 .container {
   display: grid;
   grid-template-rows: 7rem 1fr;
@@ -769,7 +761,6 @@ textarea {
   grid-template-columns: repeat(3, minmax(65px, 1fr)) repeat(11, 1fr);
   background: #fff;
   border-radius: 40px;
-  border-top-right-radius: 0;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 37.5em) {
     .overview {
